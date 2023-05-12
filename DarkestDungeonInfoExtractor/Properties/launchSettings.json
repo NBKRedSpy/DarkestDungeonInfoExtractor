@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "DarkestDungeonInfoExtractor": {
+      "commandName": "Project",
+      "commandLineArgs": "\"D:\\Games\\Steam\\steamapps\\common\\DarkestDungeon\\monsters\" c:\\work\\out.csv"
+    }
+  }
+}
