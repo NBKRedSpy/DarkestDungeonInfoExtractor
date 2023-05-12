@@ -3,7 +3,7 @@
 Extracts Attack info from game files.
 
 Creates a .csv file for all of the \*.info.darkest files in the specified folder and subfolders.
-The output is currently only the attack position info.  Contains the positions as well as a pips version as well.
+The output is currently only the attack position info.  Contains the positions as well as a pip version of those positions.
 
 Example:
 
