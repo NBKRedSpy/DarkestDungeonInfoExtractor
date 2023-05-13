@@ -65,19 +65,19 @@ namespace DarkestDungeonInfoExtractor
 
             for (int i = 0; i < MaxPositionCount; i++)
             {
+
                 bool set = positions.Any(x => x == i + 1);
+
+                if (isLaunch == false && set && IsMultiTarget && previousSet)
+                {
+                    sb.Append('-');
+                }
+
                 sb.Append(set ? '◉' : '○');
 
                 previousSet = set;
 
-                if(isLaunch == false && IsMultiTarget && previousSet)
-                {
-                    sb.Append('-');
-                }
             }
-
-            //Remove trailing -
-            if (sb[sb.Length - 1] == '-') sb.Remove(sb.Length - 1,1);
 
             return sb.ToString();
         }
